@@ -108,10 +108,34 @@ This project outlines the implementation of on-premises Active Directory within 
 
 <h3> Section 3: Joining Client-1 to the domain (mydomain.com) </h3>
 <p>
-<img src="https://github.com/user-attachments/assets/62eb6ff6-8db0-433d-ad3d-37cff55f1442" width=800/>
+<img src="https://github.com/user-attachments/assets/03e86815-a1be-4cb7-bcf4-bc1fc81708bb" width=800 />
 </p>
 <p>
 
   - After logging into DC-1 as Jane Doe, I connected to Client-1 as the original local admin (jrskanes).
-  - 
+  - I navigated to the settings and clicked on "Rename this PC (Advanced).
+  - In the "Computer Name" tab, I clicked "Change".
+  - Under "Member Of", I selected "Domain" and entered "mydomain.com".
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/00a735ff-d4ab-4590-989f-ba196c91ba5d" />
+</p>
+<p>
+  - To join the domain, I used the jane_admin account login.
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/830f5a24-f016-4267-a382-9c5f5b6c9cf7" />
+</p>
+<p>
+
+  - To finish the project, I logged back into DC-1 as jane_admin and navigated to Active Directory Users and Computers.
+  - I expanded mydomain.com to ensure that client-1 was there.
+  - I created a new Organizational Unit (OU) named "_CLIENTS".
+  - I dragged client-1 into the "_CLIENTS" Organizational Unit.
 

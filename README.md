@@ -134,8 +134,54 @@ This project outlines the implementation of on-premises Active Directory within 
 </p>
 <p>
 
-  - To finish the project, I logged back into DC-1 as jane_admin and navigated to Active Directory Users and Computers.
+  - Next, I logged back into DC-1 as jane_admin and navigated to Active Directory Users and Computers.
   - I expanded mydomain.com to ensure that client-1 was there.
   - I created a new Organizational Unit (OU) named "_CLIENTS".
   - I dragged client-1 into the "_CLIENTS" Organizational Unit.
+
+</p>
+<br />
+
+<h3> Section 4: Setting up Remote Desktop for non-administrative users on Client-1 </h3>
+<p>
+<img src="https://github.com/user-attachments/assets/275401d9-1095-4ca5-ae66-a4fd6f950122" width=800 />
+</p>
+<p>
+
+  - I logged into Client-1 as mydomain.com\jane_admin.
+  - In the start menu, I opened system properties and selected "Remote Desktop".
+  - Under "Remote Desktop Users", I added the "Domain Users" group which will allow all users in the group access to remote desktop.
+
+</p>
+<br />
+
+<h3> Section 5: Creating Users </h3>
+<p>
+<img src="https://github.com/user-attachments/assets/0f40c26a-4dfc-4d7f-80da-5e7a87a6f103" width=800 />
+</p>
+<p>
+
+  - I logged back into DC-1 as jane_admin
+  - I opened Powershell_ISE as an administrator and ran a script that automatically generated multiple employee user accounts in the _EMPLOYEES Organizational Unit (OU).
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/f599663b-1fd3-4947-87fd-5d2d09b17b7f" width=800 />
+</p>
+<p>
+
+  - After running the script, I navigated to Active Directory Users & Computers to ensure that all of the user accounts were correctly listed in the _EMPLOYEES Organization Unit (OU).
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/966ab955-6d25-427d-b903-dd1beaa69588" />
+</p>
+<p>
+
+  - To finish the project, I chose a random employee user account (bib.tel) and successfully logged into Client-1.
+
 

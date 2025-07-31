@@ -27,8 +27,8 @@ This project outlines the implementation of on-premises Active Directory within 
 </p>
 <p>
 
-  - To begin the project, I logged into the DC-1 Virtual Machine and selected "Add Roles and Features" in Server Manager.
-  - Next, I navigated to the Server Roles tab and selected "Active Directory Domain Services".
+  - First, I logged into the DC-1 Virtual Machine and opened Server Manager to begin setting uo domain services.
+  - Next, I launched "Add Roles and Features" and selected Active Directory Domain Services" (AD DS) to enable the server to function as a domain controller for centralized authentication and resource management.
 
 </p>
 <br />
